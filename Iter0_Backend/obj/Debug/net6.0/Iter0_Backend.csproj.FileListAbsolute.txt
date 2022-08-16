@@ -20,3 +20,6 @@ C:\Users\Kevin\Documents\University\8vo Semestre\TDE_Taller_de_Desarrollo_de_sof
 C:\Users\Kevin\Documents\University\8vo Semestre\TDE_Taller_de_Desarrollo_de_software\Iter0_Backend\Iter0_Backend\obj\Debug\net6.0\Iter0_Backend.genruntimeconfig.cache
 C:\Users\Kevin\Documents\University\8vo Semestre\TDE_Taller_de_Desarrollo_de_software\Iter0_Backend\Iter0_Backend\obj\Debug\net6.0\ref\Iter0_Backend.dll
 C:\Users\Kevin\Documents\University\8vo Semestre\TDE_Taller_de_Desarrollo_de_software\Iter0_Backend\Iter0_Backend\bin\Debug\net6.0\global.json
+C:\Users\Kevin\Documents\University\8vo Semestre\TDE_Taller_de_Desarrollo_de_software\Iter0_Backend\Iter0_Backend\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Kevin\Documents\University\8vo Semestre\TDE_Taller_de_Desarrollo_de_software\Iter0_Backend\Iter0_Backend\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Kevin\Documents\University\8vo Semestre\TDE_Taller_de_Desarrollo_de_software\Iter0_Backend\Iter0_Backend\obj\Debug\net6.0\Iter0_Backend.csproj.CopyComplete

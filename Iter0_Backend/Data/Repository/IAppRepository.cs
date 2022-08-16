@@ -1,6 +1,6 @@
 ﻿namespace Iter0_Backend.Data.Repository
 {
-    public class IAppRepository
+    public interface IAppRepository
     {
     }
 }

@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "r8oj3D51bLXBBugg/6HlCz5URjHtz92gUmzseiDOU+MVYcQQDxRSEPICjKB224zQgOPIwsL9tHEAxiTNpg0pOA==",
+  "dgSpecHash": "irwx5LwZT2T/aYjal5KLgXXMn/sBr9a8Ru/9bZFArq9UO/MZSZO87JbP6z5EZRUednPjFu5cbq3rwVfTOIvnUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kevin\\Documents\\University\\8vo Semestre\\TDE_Taller_de_Desarrollo_de_software\\Iter0_Backend\\Iter0_Backend\\Iter0_Backend.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Kevin\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\Kevin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Kevin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Kevin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Kevin\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Kevin\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Kevin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
