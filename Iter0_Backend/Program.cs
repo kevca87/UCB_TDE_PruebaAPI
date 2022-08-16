@@ -1,6 +1,8 @@
+using Iter0_Backend.Data;
 using Iter0_Backend.Data.Repository;
 using Iter0_Backend.Services;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,13 +10,20 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddTransient<IKidService, KidService>();
-builder.Services.AddSingleton<IAppRepository, AppRepository>();
+builder.Services.AddTransient<IAppRepository, AppRepository>();
 builder.Services.AddCors(c =>
 {
     c.AddPolicy("AllowOrigin", options => { options.AllowAnyOrigin(); options.AllowAnyMethod(); options.AllowAnyHeader(); });
 });
 //AutoMapper
 builder.Services.AddAutoMapper(typeof(KidService));
+
+//DB
+//Change from .NET Core 5 -> Now only needed call builder.Configuration insted of initialize IConfiguration
+builder.Services.AddDbContext<AppDBContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("NinosConValorDB"));
+});
 
 
 var app = builder.Build();

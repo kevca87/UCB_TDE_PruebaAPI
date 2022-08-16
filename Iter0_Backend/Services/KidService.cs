@@ -21,8 +21,8 @@ namespace Iter0_Backend.Services
         }
         public async Task<IEnumerable<KidModel>> GetKidsAsync()
         {
-            //var kidsEntityList = await _repository.GetKidsAsync();
-            var kidsEntityList = _kids;
+            var kidsEntityList = await _repository.GetKidsAsync();
+            //var kidsEntityList = _kids;
             return _mapper.Map<IEnumerable<KidModel>>(kidsEntityList);
         }
     }
