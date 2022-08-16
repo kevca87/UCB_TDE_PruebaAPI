@@ -24,6 +24,9 @@ builder.Services.AddDbContext<AppDBContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("NinosConValorDB"));
 });
+//Added to solve DateTime Error
+//https://stackoverflow.com/a/70304966/18366207
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 
 var app = builder.Build();

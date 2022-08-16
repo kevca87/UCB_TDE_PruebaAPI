@@ -20,5 +20,24 @@ namespace Iter0_Backend.Data.Repository
             query = query.AsNoTracking();
             return await query.ToListAsync();
         }
+
+        public KidEntity CreateKid(KidEntity kid)
+        {
+            _dbContext.Kids.Add(kid);
+            return kid;
+        }
+        public async Task<bool> SaveChangesAsync()
+        {
+            try
+            {
+                var result = await _dbContext.SaveChangesAsync();
+                return result > 0;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
     }
 }

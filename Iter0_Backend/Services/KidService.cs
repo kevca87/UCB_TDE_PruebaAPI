@@ -19,6 +19,19 @@ namespace Iter0_Backend.Services
             _kids.Add(new KidEntity { Id = 2, Name = "Juan", LastName = "Perez", CI = "2222222", Birthdate = new DateTime(2002, 2, 2) });
             _kids.Add(new KidEntity { Id = 3, Name = "Pedro", LastName = "Perez", CI = "3333333", Birthdate = new DateTime(2003, 3, 3) });
         }
+
+        public async Task<KidModel> CreateKidAsync(KidModel kid)
+        {
+            var kidEntity = _mapper.Map<KidEntity>(kid);
+            kidEntity = _repository.CreateKid(kidEntity);
+            var result = await _repository.SaveChangesAsync();
+            if (result)
+            {
+                return _mapper.Map<KidModel>(kidEntity);
+            }
+            throw new Exception("Database Error");
+        }
+
         public async Task<IEnumerable<KidModel>> GetKidsAsync()
         {
             var kidsEntityList = await _repository.GetKidsAsync();

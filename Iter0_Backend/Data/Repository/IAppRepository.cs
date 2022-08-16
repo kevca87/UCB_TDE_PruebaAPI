@@ -6,5 +6,7 @@ namespace Iter0_Backend.Data.Repository
     {
         //Kids
         Task<IEnumerable<KidEntity>> GetKidsAsync();
+        KidEntity CreateKid(KidEntity kid);
+        Task<bool> SaveChangesAsync();
     }
 }
