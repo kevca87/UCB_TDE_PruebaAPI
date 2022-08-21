@@ -15,9 +15,9 @@ namespace Iter0_Backend.Services
             _repository = repository;
             _mapper = mapper;
             _kids = new List<KidEntity>();
-            _kids.Add(new KidEntity { Id = 1, Name = "Checo", LastName = "Perez", CI = "111111", Birthdate = new DateTime(2001, 1, 1) });
-            _kids.Add(new KidEntity { Id = 2, Name = "Juan", LastName = "Perez", CI = "2222222", Birthdate = new DateTime(2002, 2, 2) });
-            _kids.Add(new KidEntity { Id = 3, Name = "Pedro", LastName = "Perez", CI = "3333333", Birthdate = new DateTime(2003, 3, 3) });
+            _kids.Add(new KidEntity { Id = 1, Name = "Checo", LastName = "Perez", CI = "111111", BirthDate = new DateTime(2001, 1, 1) });
+            _kids.Add(new KidEntity { Id = 2, Name = "Juan", LastName = "Perez", CI = "2222222", BirthDate = new DateTime(2002, 2, 2) });
+            _kids.Add(new KidEntity { Id = 3, Name = "Pedro", LastName = "Perez", CI = "3333333", BirthDate = new DateTime(2003, 3, 3) });
         }
 
         public async Task<KidModel> CreateKidAsync(KidModel kid)
