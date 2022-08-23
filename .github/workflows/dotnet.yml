@@ -24,7 +24,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY_DEPLOY}}
-          heroku_app_name: "ucb-tde-ninos-con-valor-api" #Must be unique in Heroku
-          heroku_email: "kevcespedesarancibia87@gmail.com"
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY_DEPLOY}}
+        heroku_app_name: "ucb-tde-ninos-con-valor-api" #Must be unique in Heroku
+        heroku_email: "kevcespedesarancibia87@gmail.com"
